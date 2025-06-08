@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.disco-transform:hover {
+  /* transform: scale(1.1) rotate(1deg); */
+  background: linear-gradient(45deg, #ff0080, #00ffff, #6c6c39, #ff0080);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: disco-bg 3s ease-in-out infinite;
+}
+
+@keyframes disco-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer utilities {
+  .neon-underline {
+    @apply relative inline-block;
+  }
+
+  .neon-underline::before,
+  .neon-underline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  
+    width: 100%;
+    background-image: linear-gradient(to right, #d2f6d5, #ffffff);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+  }
+
+  /* .neon-underline::before {
+    top: -4px;
+    left: 0;
+    transform-origin: right;
+  } */
+
+  .neon-underline::after {
+    bottom: -4px;
+    left: 0;
+    transform-origin: left;
+  }
+
+  /* .neon-underline:hover::before, */
+  .neon-underline:hover::after {
+    transform: scaleX(1);
+  }
+}
