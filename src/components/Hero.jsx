@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
 import { useState, useEffect } from "react";
-
+import RotatingTitle from "./RotatingTitle";
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -70,8 +70,8 @@ const Hero = () => {
               </span>
             </h1>
 
-            <h2 className="text-2xl text-gray-300 mb-6 font-medium">Fullstack Software Engineer</h2>
-
+            {/* <h2 className="text-2xl text-gray-300 mb-6 font-medium">Fullstack Software Engineer</h2> */}
+            <RotatingTitle />
             <p className="text-gray-400 mb-8 leading-relaxed">
               I build beautiful, functional, and user-friendly web applications
               that deliver exceptional user experiences. Full Stack Developer proficient in React, Node.js, 
