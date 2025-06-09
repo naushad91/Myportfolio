@@ -183,7 +183,7 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "SoftSell Marketplace",
+      title: "Design Space: Collaboratve Whiteboard",
       videoSrc: "/demo.mp4",
       poster: "/thumbnail.jpg",
       description: "A modern marketplace for unused software licenses featuring AI-powered recommendations and secure transactions.",
@@ -197,7 +197,7 @@ export default function Projects() {
       ]
     },
     {
-      title: "License Analytics",
+      title: "Wassup! Scalable Chatapp",
       videoSrc: "/demo.mp4",
       poster: "/thumbnail.jpg",
       description: "Advanced analytics dashboard for software license utilization with real-time insights and cost optimization.",
